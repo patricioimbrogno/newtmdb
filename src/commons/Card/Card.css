@@ -1,0 +1,128 @@
+.img-overlay-wrap {
+  position: relative;
+  display: inline-block; /* <= shrinks container to image size */
+  transition: transform 150ms ease-in-out;
+}
+
+.img-overlay-wrap img {
+  /* <= optional, for responsiveness */
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-overlay-wrap svg {
+  position: absolute;
+
+  left: 2;
+
+  top: 0;
+}
+
+.img-overlay-wrap:hover {
+  transform: rotate(15deg);
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+.circle-svg {
+  display: block;
+  margin: 10px auto;
+  max-height: 50px;
+  fill: white;
+}
+.circle-svg text {
+  text-align: center;
+  color: white;
+  font-size: 10px;
+}
+.circle-svg path.percent {
+  stroke: green;
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+.circle-svg path.percentMiddle {
+  stroke: yellow;
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+.circle-svg path.around {
+  stroke: #c4c4c4;
+  fill: black;
+  stroke-width: 2.8;
+}
+
+.circleSinglePage {
+  display: block;
+  margin: 10px;
+  margin-left: 50px;
+  max-height: 40px;
+  fill: white;
+}
+
+.circleSinglePage text {
+  text-align: center;
+  color: white;
+  font-size: 10px;
+}
+.circleSinglePage path.percent {
+  stroke: green;
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+.circleSinglePage path.percentMiddle {
+  stroke: yellow;
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+.circleSinglePage path.around {
+  stroke: #c4c4c4;
+  fill: black;
+  stroke-width: 2.8;
+}
+
+
+.favoriteCard {
+  position: absolute;
+  top: 25px;
+  margin-left: 120px;
+  display: block;
+}
+
+.favoriteSinglePage {
+  position: absolute;
+  margin-top: 10px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  margin-top: 30px;
+  margin-right: 60px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
